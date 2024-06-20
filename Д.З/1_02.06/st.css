@@ -1,0 +1,29 @@
+nav {
+    background: pink;
+    padding: 15px;
+  }
+  
+  ol {
+    padding: 0;
+    list-style: none;
+    counter-reset: item;
+  }
+  
+  li::before {
+    content: counter(item) ".";
+    color: #fff;
+  }
+  
+  li {
+    color: #fff;
+    margin-bottom: 10px;
+    background: rgb(185, 83, 83);
+    padding: 15px 0 15px 20px;
+    counter-increment: item;
+  }
+  
+  span {
+    margin-left: 15px;
+    padding: 10px;
+    background: rgb(136, 28, 28);
+  }
